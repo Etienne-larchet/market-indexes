@@ -1,0 +1,24 @@
+[project]
+name = "market-indexes"
+version = "0.1.0"
+description = "Python package to retrieve market indexes composition over time"
+authors = [
+    {name = "Etienne",email = "etienne.larchet@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas[html] (>=2.2.3,<3.0.0)",
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.1"
+black = "^25.1.0"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
